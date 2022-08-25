@@ -15,7 +15,7 @@ peerServer.on('connection', (client) => {
   console.log('Peer connected:', client.getId());
 });
 app.use(peerServer);
-app.use(express.static(path.join(__dirname, '../../front/build/static')));
+app.use(express.static(path.join(__dirname, '../../front/build')));
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
