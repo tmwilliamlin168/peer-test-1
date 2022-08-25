@@ -55,7 +55,7 @@ function App() {
       host: '/',
       port:
         (process.env.REACT_APP_PEER_PORT && +process.env.REACT_APP_PEER_PORT) ||
-        (window.location.port ? +window.location.port : undefined),
+        (window.location.port ? +window.location.port : 443),
       debug: 1,
       path: '/peer',
     });
