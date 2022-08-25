@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "rules": {
+    "eqeqeq": "error",
+    "no-case-declarations": "error"
+  }
+}
